@@ -1,3 +1,9 @@
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+subscription_id = " 10bd7109-7882-47f8-b6e6-a8c123c66305”
+tenant_id       = "189de737-c93a-4f5a-8b68-6f4ca9941912"
+}
+
 module "os" {
   source       = "./os"
   vm_os_simple = "${var.vm_os_simple}"
